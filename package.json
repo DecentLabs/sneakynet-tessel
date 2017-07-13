@@ -1,0 +1,16 @@
+{
+  "name": "sneakynet-tessel",
+  "version": "1.0.0",
+  "description": "Welcome to decent localnet, your only hope after Tata turned on you.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

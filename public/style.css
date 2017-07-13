@@ -1,0 +1,29 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  margin: 0;
+  background: #EEEEEE;
+}
+header {
+  background-color: #3f51b5;
+  color: #ffffff;
+  padding: .5em 1em;
+  margin: 0;
+}
+h1 {
+  font-size: 18px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+.wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+section {
+  margin: 1em;
+  background: white;
+  box-shadow: 2px 6px 20px rgba(0,0,0,.3);
+  padding: 1em 2em;
+}
