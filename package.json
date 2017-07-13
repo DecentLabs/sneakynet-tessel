@@ -9,7 +9,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "npm test",
-    "start": "node server.js"
+    "start": "node server.js",
+    "t2run": "t2 run server.js",
+    "t2deploy": "t2 push server.js"
   },
   "author": "",
   "license": "ISC"
