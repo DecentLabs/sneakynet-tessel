@@ -11,4 +11,4 @@ const create = (ssid) => {
   });
 }
 
-module.exports = {create}
+module.exports = { create }
