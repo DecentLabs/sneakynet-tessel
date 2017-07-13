@@ -4,8 +4,7 @@
   "description": "Welcome to decent localnet, your only hope after Tata turned on you.",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.15.3",
-    "mongodb": "^2.2.30"
+    "express": "^4.15.3"
   },
   "devDependencies": {},
   "scripts": {
