@@ -1,10 +1,19 @@
+:root {
+  --color: #3f51b5;
+}
+
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   margin: 0;
   background: #EEEEEE;
+  font-size: 16px;
+}
+input, button, textarea {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-size: 16px;
 }
 header {
-  background-color: #3f51b5;
+  background-color: var(--color);
   color: #ffffff;
   padding: .5em 1em;
   margin: 0;
@@ -25,5 +34,19 @@ section {
   margin: 1em;
   background: white;
   box-shadow: 2px 6px 20px rgba(0,0,0,.3);
-  padding: 1em 2em;
+  padding: 2em;
+}
+
+button {
+  width: 100%;
+  background: var(--color);
+  color: white;
+  border: none;
+  padding: 1em;
+}
+textarea {
+  padding: .5em;
+  width: 100%;
+  margin-bottom: 1em;
+  box-sizing: border-box;
 }
