@@ -1,9 +1,10 @@
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
+const os = require('os')
 
 const Datastore = require('nedb')
-const db = new Datastore({ filename: 'db/messages.db' })
+const db = new Datastore({ filename: 'db/messages.jsonl' })
 
 db.loadDatabase(function (err) {
   if (err) {
@@ -11,7 +12,7 @@ db.loadDatabase(function (err) {
   } else {
     console.log('\x1b[35mINFO \x1b[0mdb connected')
   }
-});
+})
 
 const app = express()
 app.use(bodyParser.json())
@@ -21,11 +22,12 @@ app.get('/api/messages', (req, res) => {
   db.find({}, function (err, docs) {
     console.log(docs)
     res.json(docs)
-  });
+  })
 })
 
 app.post('/api/messages', (req, res) => {
-  db.insert(req.body, function (err, newDocs) {
+  const payload = Object.assign({}, req.body, {'source_node': os.hostname()})
+  db.insert(payload, function (err, newDocs) {
     if (err) {
       console.error(err)
     } else {
